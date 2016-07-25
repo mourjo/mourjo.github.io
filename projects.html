@@ -1,170 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+title: projects
+display_title: Projects
+layout: base
+---
 
-    <meta name="description" content="Personal Webpage">
-    <meta name="author" content="Mourjo Sen">
-    <meta name="robots" content="all" />
-    <link rel="shortcut icon" href="ico/favicon.png">
-
-    <title>Mourjo Sen | Projects</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <link href="css/layout.css" rel="stylesheet">
-
-    <script src="js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <meta name="description" content="Page description." />
-
-    <!-- Open Graph data--> 
-    <meta property="og:title" content="Mourjo Sen" /> 
-    <meta property="og:type" content="article" /> 
-    <meta property="og:url" content=" http://mourjo.github.io/" />
-    <meta property="og:image" content=" http://mourjo.github.io/img/me11.jpg" />
-    <meta property="og:description" content="This is the personal page of Mourjo Sen." /> 
-    <meta property="og:site_name" content="Personal site of Mourjo Sen" /> 
-    <meta property="fb:admins" content="Facebook numeric ID" />
-
-    <!--Twitter Card data-->
-    <meta name="twitter:card" content="summary"/> 
-    <meta name="twitter:site" content="@mourjo_sen"/> 
-    <meta name="twitter:title" content="Mourjo Sen"/> 
-    <meta name="twitter:description" content="This is the personal page of Mourjo Sen."/> 
-    <meta name="twitter:creator" content="@mourjo_sen"/> 
-    <!--Twitter Summary card images must be at least 200x200px--> 
-    <meta name="twitter:image" content=" http://mourjo.me/img/me_tw.jpg"/> 
-
-  </head>
-
-  <body>
-
-    <div class="site-wrapper">
-      <div class="site-wrapper-inner" >
-        <div class="cover-container">
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand">Mourjo Sen</h3>
-              <nav>
-                <ul class="nav masthead-nav">
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="aboutme.html">About me</a></li>
-                  <li><a href="education.html">Education</a></li>
-                  <li class="active"><a href="projects.html">Projects</a></li>
-                  <li><a href="skills.html">Skills</a></li>
-                  <li><a href="cv.html">CV</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-
-          <div class="inner cover" style="padding-top: 0px;" style="text-align: justify">
-              
-              <div class="col-md-12" style="vertical-align: middle; text-align: justify; padding-top: 30px">
-                <h3>Analysis of Spam on Twitter</h3>
-                        <p style="padding-bottom: 20px"> Analysis of <i>trust</i> on Twitter: A research project to analyse who can be trusted on Twitter. Done during the two years of the MS. The first two stages of the project have been completed.
-                            For details, click <a target="blank" href="master_thesis_MourjoSen.pdf">here</a> for the project report. 
-                            To collect crawl Twitter and collect data, I used Twitter's <a target="blank" href="https://dev.twitter.com/rest/public">REST APIs</a> and 
-                            <a target="blank" href="https://dev.twitter.com/streaming/overview">Streaming APIs</a> from a 
-                            <a target="blank" href="https://github.com/bear/python-twitter">python wrapper</a>. Handling the huge amount of data and a new measure of trust required very specialized 
-                            algorithms that could work on the disk and quantitatively estimate the subjective notion of trust.
-                        </p>
-                        
-                        <h3>Pet Projects</h3>
-                        <p style="padding-bottom: 20px">  
-                            A Java project to solve the combinatorial problem of finding all shapes formed by a set of given 
-                            line segments in a 2D space.
-                            <a target="blank" href="https://github.com/mourjo/ShapeDetection">Repository</a> for the project.
-                        </p>
-
-                        <p style="padding-bottom: 20px">  
-                            A web-application written in Python for accessing one's Gmail account and showing statistics about emails in their Gmail inbox.
-                            Deployed online <a target="blank" href="http://simple-email-reader.elasticbeanstalk.com">here</a>.
-                        </p>
-
-                        <p style="padding-bottom: 20px"> 
-                            SXC-CMS: A web application aimed at maintaining the St Xavier's College's non-academic credits using PHP framework <i>CodeIgniter</i> and CSS framework <i>Twitter - Bootstrap</i>.
-                            <a target="blank" href="https://github.com/mourjo/SXCCMS">Repository</a> for the project. 
-                            <a target="blank" href="SXCCMS.pdf"> More details.</a>
-                        </p>
-                        <p style="padding-bottom: 20px"> 
-                            Alienvation: Developing a GUI game using <i>Java Swing</i> in which a player controls spaceships and fights against aliens. <a target="blank" href="http://github.com/mourjo/Alienvation">Repository</a> for the project.
-                        </p>
-                        <p style="padding-bottom: 20px">  
-                            A <i>web-based social learning environment <a target="blank" href="http://edusoc.co">Edusoc</a></i> for teaching and learning over the Internet. Aimed at using dynamics of social networking to promote educational activities, especially in developing countries like India.
-                            <a target="blank" href="edusoc.pdf"> More details.</a>
-                        </p>
-                        <p style="padding-bottom: 20px">  
-                        JChirp: A Java library to access the <i>Twitter REST</i> and <i>Streaming APIs</i>, with implementation of OAuth authentication protocol. Development team of two members. <a target="blank" href="http://github.com/vabh/JChirp">Repository</a> for the project.
-                        </p>
-                        
-                        <h3>Other Projects</h3>
-                        <p style="padding-bottom: 20px"> 
-                            I have worked in a two-member team on a project to <i>schedule virtual machines</i> in a simulated datacenter, based on different
-                            criteria like energy consumption, SLA violations, migrations, affinity etc. We used Java and <a target="blank" href="http://www.cloudbus.org/cloudsim/">CloudSim</a> framework. 
-                            <a target="blank" href="https://github.com/mourjo/VMScheduling">Repository</a> for the project.
-                        </p> 
-
-                        <p style="padding-bottom: 20px">  
-                            I developed an African game called <a target="blank" href="http://en.wikipedia.org/wiki/Oware">Oware</a> using Minimax and AlphaBeta Pruning algorithms in Java. 
-                            The program played against human players. <a target="blank" href="https://github.com/mourjo/Oware">Repository</a> for the project.
-                        </p>
-
-                        <p style="padding-bottom: 20px">  
-                            Implementation of the security protocol <i>Extensible Authentication Protocol (EAP)</i> in Java for authentication in a point-to-point socket-based connection.
-                            <a target="blank" href="https://github.com/mourjo/SocketAuth">Repository</a> for the project.
-                        </p>
-                        <p style="padding-bottom: 20px">  
-                            Developed an <i>Android</i> app for a distributed traffic lighting system for pedestrians to be able to
-                            request for crossing a road using the app. Safety and liveness conditions were proved using NuSMV.
-                            <a target="blank" href="https://github.com/mourjo/androidTrafficLight">Repository</a> for the project.
-                        </p>
-                        <p style="padding-bottom: 20px">  
-                            A Java project to simulate an environment with independent agents moving in the environment and 
-                            communicating with each other independently, and forming groups.
-                            <a target="blank" href="https://github.com/mourjo/CreatureSimulation">Repository</a> for the project.
-                        </p>
-                        
-                        
-                        
-                        <p style="padding-bottom: 20px">  
-                            A 5-member group project that would take theoretical models of computation like Petri Nets and Synchronous Dataflow Graphs,
-                            and produce runnable code in Java/C/OpenMPI. <i>Eclipse modeling framework (EMF)</i> was used for the functionalities 
-                            and was then implemented as an Eclipse plugin. <a target="blank" href="https://github.com/mourjo/ModelsOfComputation">Repository</a> for the project.
-                            <a target="blank" href="parallelismProjectReport.pdf"> More details.</a>
-                        </p>
-                        <p style="padding-bottom: 20px">  
-                            I worked on a Java <i>cryptography</i> project to implement key exchange, digital signatures and certificates.
-                        </p>
-                        <p style="padding-bottom: 20px">
-                            Image processing project to derive a mathematical function for an <i>optimal edge detector</i> and them implementing in <i>Matlab</i> for edge detection images.
-                            <a target="blank" href="https://github.com/mourjo/edgeDetector">Repository</a> for the project.
-                        </p>
-              </div>
-          </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p>&copy; Mourjo Sen 2015</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<div class="col-md-12">
+    <h3>Analysis of Spam on Twitter</h3>
+    <p style="padding-bottom: 20px"> Analysis of <i>trust</i> on Twitter: A research project to analyse who can be trusted on Twitter. Done during the two years of the MS. The first two stages of the project have been completed.
+        For details, click <a target="blank" href="{{ site.baseurl }}/assets/master_thesis_MourjoSen.pdf">here</a> for the project report.
+        To collect crawl Twitter and collect data, I used Twitter's <a target="blank" href="https://dev.twitter.com/rest/public">REST APIs</a> and
+        <a target="blank" href="https://dev.twitter.com/streaming/overview">Streaming APIs</a> from a
+        <a target="blank" href="https://github.com/bear/python-twitter">python wrapper</a>. Handling the huge amount of data and a new measure of trust required very specialized
+        algorithms that could work on the disk and quantitatively estimate the subjective notion of trust.
+    </p>
     
-    <script src="js/jquery-1.11.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</html>
+    <h3>Pet Projects</h3>
+    <p style="padding-bottom: 20px">
+        A Java project to solve the combinatorial problem of finding all shapes formed by a set of given
+        line segments in a 2D space.
+        <a target="blank" href="https://github.com/mourjo/ShapeDetection">Repository</a> for the project.
+    </p>
+    <p style="padding-bottom: 20px">
+        A web-application written in Python for accessing one's Gmail account and showing statistics about emails in their Gmail inbox. <a target="blank" href="https://github.com/mourjo/gmail-webapp">Repository</a> for the project.
+    </p>
+    <p style="padding-bottom: 20px">
+        SXC-CMS: A web application aimed at maintaining the St Xavier's College's non-academic credits using PHP framework <i>CodeIgniter</i> and CSS framework <i>Twitter - Bootstrap</i>.
+        <a target="blank" href="https://github.com/mourjo/SXCCMS">Repository</a> for the project.
+        <a target="blank" href="{{ site.baseurl }}/assets/SXCCMS.pdf"> More details.</a>
+    </p>
+    <p style="padding-bottom: 20px">
+        Alienvation: Developing a GUI game using <i>Java Swing</i> in which a player controls spaceships and fights against aliens. <a target="blank" href="http://github.com/mourjo/Alienvation">Repository</a> for the project.
+    </p>
+    <p style="padding-bottom: 20px">
+        A <i>web-based social learning environment Edusoc</i> for teaching and learning over the Internet. Aimed at using dynamics of social networking to promote educational activities, especially in developing countries like India.
+        <a target="blank" href="{{ site.baseurl }}/assets/edusoc.pdf"> More details.</a>
+    </p>
+    <p style="padding-bottom: 20px">
+        JChirp: A Java library to access the <i>Twitter REST</i> and <i>Streaming APIs</i>, with implementation of OAuth authentication protocol. Development team of two members. <a target="blank" href="http://github.com/vabh/JChirp">Repository</a> for the project.
+    </p>
+    
+    <h3>Other Projects</h3>
+    <p style="padding-bottom: 20px">
+        I have worked in a two-member team on a project to <i>schedule virtual machines</i> in a simulated datacenter, based on different
+        criteria like energy consumption, SLA violations, migrations, affinity etc. We used Java and <a target="blank" href="http://www.cloudbus.org/cloudsim/">CloudSim</a> framework.
+        <a target="blank" href="https://github.com/mourjo/VMScheduling">Repository</a> for the project.
+    </p>
+    <p style="padding-bottom: 20px">
+        I developed an African game called <a target="blank" href="http://en.wikipedia.org/wiki/Oware">Oware</a> using Minimax and AlphaBeta Pruning algorithms in Java.
+        The program played against human players. <a target="blank" href="https://github.com/mourjo/Oware">Repository</a> for the project.
+    </p>
+    <p style="padding-bottom: 20px">
+        Implementation of the security protocol <i>Extensible Authentication Protocol (EAP)</i> in Java for authentication in a point-to-point socket-based connection.
+        <a target="blank" href="https://github.com/mourjo/SocketAuth">Repository</a> for the project.
+    </p>
+    <p style="padding-bottom: 20px">
+        A simple web interface to display any RSS feed in Python, with provision to directly deploy on Elastic Beanstalk.
+        <a target="blank" href="https://github.com/mourjo/simple-rss-reader">Repository</a> for the project.
+    </p>
+    <p style="padding-bottom: 20px">
+        Developed an <i>Android</i> app for a distributed traffic lighting system for pedestrians to be able to
+        request for crossing a road using the app. Safety and liveness conditions were proved using NuSMV.
+        <a target="blank" href="https://github.com/mourjo/androidTrafficLight">Repository</a> for the project.
+    </p>
+    <p style="padding-bottom: 20px">
+        A Java project to simulate an environment with independent agents moving in the environment and
+        communicating with each other independently, and forming groups.
+        <a target="blank" href="https://github.com/mourjo/CreatureSimulation">Repository</a> for the project.
+    </p>
+    
+    
+    
+    <p style="padding-bottom: 20px">
+        A 5-member group project that would take theoretical models of computation like Petri Nets and Synchronous Dataflow Graphs,
+        and produce runnable code in Java/C/OpenMPI. <i>Eclipse modeling framework (EMF)</i> was used for the functionalities
+        and was then implemented as an Eclipse plugin. <a target="blank" href="https://github.com/mourjo/ModelsOfComputation">Repository</a> for the project.
+        <a target="blank" href="{{ site.baseurl }}/assets/parallelismProjectReport.pdf"> More details.</a>
+    </p>
+    <p style="padding-bottom: 20px">
+        I worked on a Java <i>cryptography</i> project to implement key exchange, digital signatures and certificates.
+    </p>
+    <p style="padding-bottom: 20px">
+        Image processing project to derive a mathematical function for an <i>optimal edge detector</i> and them implementing in <i>Matlab</i> for edge detection images.
+        <a target="blank" href="https://github.com/mourjo/edgeDetector">Repository</a> for the project.
+    </p>
+</div>
