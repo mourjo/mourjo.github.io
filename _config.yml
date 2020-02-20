@@ -1,8 +1,8 @@
 ### your site title here
 
-title: Hagura - Light!
-baseurl: /hagura # name of the repository
-email: your@email.com
+title: Mourjo Sen
+baseurl:  # name of the repository
+email: mourjo@mourjo.me
 
 
 
@@ -14,10 +14,10 @@ paginate: 4
 
 
 # Tracker
-analytics: UA-83979019-4
+analytics: UA-83979082-4
 
 # Comments
-disqus-shortname: webjeda-demo
+disqus-shortname: mourjo
 
 
 #optimization
