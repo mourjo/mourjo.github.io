@@ -1,21 +1,50 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+### your site title here
 
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mourjo.me" # the base hostname & protocol for your site
-twitter_username: mourjo_sen
-github_username:  mourjo
+title: Hagura - Light!
+baseurl: /hagura # name of the repository
+email: your@email.com
 
-# Build settings
+
+
+highlighter: rouge
 markdown: kramdown
+
+
+paginate: 4
+
+
+# Tracker
+analytics: UA-83979019-4
+
+# Comments
+disqus-shortname: webjeda-demo
+
+
+#optimization
+#compress.html
+compress_html:
+  clippings: [html,div, p, ul, td, h1, h2, h3, h4,link, meta, footer, nav, img, header, hr, br, head, style, li, ul, ol, time, main, script, title]
+  comments: ["<!-- ", " -->"]
+  endings: [all]
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: []
+
+
+sass:
+  sass_dir: /assets/css/_sass
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE.md
+
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-paginate
