@@ -96,37 +96,15 @@ blockquote {
 
 
 .headline, .post-headline {
-    font-size: 4em;
+    font-size: 2.5em;
+    font-family:  'Gentium Basic', ;
+    text-decoration: bold;
     margin-bottom: 0.5em;
 
         @include media-query($on-palm) {
             font-size: 2em;
         }
     }
-
-
-/* Home Button */
-.home {
-    background-image: url(../images/left-arrow.svg);
-    background-repeat: no-repeat;
-    height: 40px;
-    width: 40px;
-    opacity: 0.9;
-    position: fixed;
-    top: 50px;
-    left: 50px;
-    &:hover{
-    opacity: 1;
-    }
-    @include media-query($on-laptop) {
-        top: 90%;
-        left: 90%;
-        height: 30px;
-        width: 30px;
-        opacity: 0.6;
-    }
-}
-
 
 
 /* Article list in index/home page */
