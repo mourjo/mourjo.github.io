@@ -30,6 +30,7 @@ body {
 
 a {
     color: $brand-color;
+    text-transform: none;
     text-decoration: none;
     &:hover{
      color: $text-color;
@@ -99,12 +100,26 @@ blockquote {
     font-size: 2.5em;
     font-family:  'Gentium Basic', ;
     text-decoration: bold;
-    margin-bottom: 0.5em;
+    text-align: center;
+    margin-bottom: -0.25em;
 
-        @include media-query($on-palm) {
-            font-size: 2em;
-        }
+    @include media-query($on-palm) {
+      font-size: 2em;
     }
+  }
+
+.brand-img {
+  /* Portrait and Landscape */
+  width: 20%;
+  border-radius: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  
+  @include media-query($on-palm) {
+    display: none;
+  }
+}
 
 
 /* Article list in index/home page */

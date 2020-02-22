@@ -2,6 +2,13 @@
 layout: default
 ---
 <h1 class="headline">{{site.title}}</h1>
+<h4 style="text-align:center">
+  <a href="/index.html">Home</a> |
+  <a href="/blog">Blog</a> |
+  <a href="MourjoSen_CV.pdf">CV</a>
+</h4>
+
+<img class="brand-img" src="assets/images/MourjoSen.jpg" alt="Avatar">
 <div class="article-list">
   {% for post in paginator.posts %}
     <h2><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
@@ -19,6 +26,7 @@ layout: default
   {% else %}
     <span>&laquo; Prev</span>
   {% endif %}
+
 
   {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
