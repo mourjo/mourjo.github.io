@@ -40,8 +40,8 @@ body {
   color: #cce6ff;
   font-size: 19px;
   /*source sans pro*/
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 250;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   line-height: 140%;
 }
 
@@ -98,7 +98,7 @@ h1 {
   /*border:None; */
   color:#99ccff;
   padding-left:2px;
-  padding-right:2px; 
+  padding-right:2px;
   border-top: 2px solid #99ccff;
   border-bottom: 2px solid #99ccff;
   /*border-radius: 9px;*/
@@ -194,7 +194,7 @@ h1 {
     padding-left: 6px;
     padding-right: 6px;
   }
-  .font-page-content-1 { 
+  .font-page-content-1 {
     width: 100%;
   }
   .masthead {
