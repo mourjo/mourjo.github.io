@@ -1,0 +1,5 @@
+a, a:focus, a:hover {
+    color:black;
+    font-weight:bolder;
+    text-decoration:none;
+}
