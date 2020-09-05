@@ -1,0 +1,134 @@
+body {
+    color: rgb(75, 75, 75);
+    background-color:white;
+    font-family: 'Spectral', serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.nodecor {
+    text-decoration: none;
+}
+
+h1{font-family: 'Lora', serif;margin-top:5px;margin-bottom:10px;}
+h2{font-family: 'Lora', serif;margin-top:5px;margin-bottom:10px;}
+h3{font-family: 'Lora', serif;margin-top:5px;margin-bottom:10px;}
+h4{font-family: 'Lora', serif;}
+h5{font-family: 'Lora', serif;}
+h6{font-family: 'Lora', serif;}
+
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+    color:inherit;
+    font-weight: bold;
+}
+
+pre {
+    border: 1px solid #888;
+    overflow: auto;
+}
+
+blockquote {
+    border-left: 1px solid #aaa;
+    padding-left: 0.7em;
+}
+
+img {
+    max-width: 568px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page {
+    max-width: 568px;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.content {
+    clear: both;
+}
+
+.footer {
+    clear: both;
+    padding-top: 5px;
+    margin-top: 30px;
+    margin-bottom: 1em;
+    border-top: 1px solid black;
+    text-align: center;
+    font-family: 'Spectral', serif;
+}
+
+.header {
+    clear: both;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    margin-top: 1em;
+    border-bottom: 1px solid black;
+    text-align: right;
+    padding-bottom: 0.5em;
+    font-family: 'Spectral', serif;
+}
+
+.brand {
+    float:left;
+    font-family: 'Lora', serif;
+}
+
+.header a {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+}
+
+.footer a {
+    text-decoration: none;
+    font-family: 'Lora', serif;
+}
+
+.post {
+    padding-top: 10px;
+}
+
+.papertitle {
+    font-size: 1.2em;
+    line-height: 1.1em;
+    font-weight: bolder;
+    color: #000;
+}
+
+@media (max-width: 480px) {
+    .page {
+        max-width: 300px;
+        width: 300px;
+        line-height: 27px;
+    }
+
+    .page h1,h2,h3 {
+        line-height: 45px;
+    }
+
+    .optional {
+        display: none;
+    }
+
+    img {
+        max-width: 300px;
+    }
+}
