@@ -20,6 +20,7 @@ body {
 
 .nodecor {
     text-decoration: none;
+    font-weight: normal;
 }
 
 h1{font-family: 'Lora', serif;margin-top:5px;margin-bottom:10px;}
@@ -32,9 +33,18 @@ h6{font-family: 'Lora', serif;}
 a:visited,
 a:link,
 a:active {
-    text-decoration: none;
-    color:inherit;
-    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgb(219, 219, 219);
+    color:inherit; 
+    
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgb(134, 134, 134);
+    color:inherit; 
 }
 
 pre {
@@ -45,6 +55,7 @@ pre {
 blockquote {
     border-left: 1px solid #aaa;
     padding-left: 0.7em;
+    font-style: italic;
 }
 
 img {
@@ -97,11 +108,19 @@ img {
 .header a {
     text-decoration: none;
     font-family: 'Lora', serif;
+    font-weight: bold;
 }
 
 .footer a {
     text-decoration: none;
     font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+.copy {
+    color: rgb(170, 170, 170);
+    font-style: italic;
+    font-size: smaller;
 }
 
 .post {
