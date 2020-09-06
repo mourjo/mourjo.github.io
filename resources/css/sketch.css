@@ -51,6 +51,9 @@ img {
     max-width: 568px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
 }
 
 .page {
@@ -129,5 +132,10 @@ img {
 
     img {
         max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        display: block;
+        text-align: center;
     }
 }
