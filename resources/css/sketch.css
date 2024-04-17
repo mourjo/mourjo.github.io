@@ -11,6 +11,13 @@ body {
     hyphens: auto;
 }
 
+.social-icon {
+    padding: 2px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    font-size:35px;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -35,7 +42,9 @@ a:link,
 a:active {
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: rgb(219, 219, 219);
+    text-decoration-color: rgb(137, 137, 137);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
     color:inherit; 
     
 }
@@ -43,7 +52,7 @@ a:active {
 a:hover {
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: rgb(134, 134, 134);
+    text-decoration-color: rgb(87, 87, 87);
     color:inherit; 
 }
 
@@ -156,5 +165,27 @@ img {
         border-radius: 5px;
         display: block;
         text-align: center;
+    }
+
+    a:active {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-color: rgb(137, 137, 137);
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+        color:inherit; 
+        
+    }
+    
+    a:hover {
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-color: rgb(87, 87, 87);
+        color:inherit; 
+    }
+    
+
+    .social-icon {
+        font-size:25px;
     }
 }
