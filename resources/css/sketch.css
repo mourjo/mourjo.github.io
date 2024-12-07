@@ -47,7 +47,8 @@ a:visited,
 a:link,
 a:active {
     text-decoration: underline;
-    text-decoration-style: dotted;
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
     text-decoration-color: rgb(219, 219, 219);
     color:inherit; 
     
@@ -55,11 +56,11 @@ a:active {
 
 a:hover {
     text-decoration: underline;
-    text-decoration-style: dotted;
+    text-decoration-style: dashed;
+    text-underline-offset: 3px;
     text-decoration-color: rgb(134, 134, 134);
     color:inherit; 
 }
-
 
 blockquote {
     border-left: 1px solid #aaa;
