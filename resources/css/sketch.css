@@ -2,13 +2,10 @@ body {
     color: rgb(75, 75, 75);
     background-color:white;
     font-family: 'Spectral', serif;
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
+    
 }
 
 strong {
@@ -23,12 +20,8 @@ b {
     font-style: normal;
 }
 
-
 .social-icon {
-    padding: 2px;
-    padding-top: 5px;
-    padding-bottom: 7px;
-    font-size:38px;
+    font-size: 30px;
 }
 
 .center {
@@ -55,9 +48,7 @@ a:link,
 a:active {
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: rgb(137, 137, 137);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 3px;
+    text-decoration-color: rgb(219, 219, 219);
     color:inherit; 
     
 }
@@ -65,14 +56,10 @@ a:active {
 a:hover {
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: rgb(87, 87, 87);
+    text-decoration-color: rgb(134, 134, 134);
     color:inherit; 
 }
 
-pre {
-    border: 1px solid #888;
-    overflow: auto;
-}
 
 blockquote {
     border-left: 1px solid #aaa;
@@ -81,7 +68,7 @@ blockquote {
 }
 
 img {
-    max-width: 568px;
+    max-width: 70ch;
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px;
@@ -90,8 +77,8 @@ img {
 }
 
 .page {
-    max-width: 568px;
-    min-width: 300px;
+    max-width: 70ch;
+    min-width: 30ch;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
@@ -149,6 +136,7 @@ img {
     padding-top: 10px;
 }
 
+
 .papertitle {
     font-size: 1.2em;
     line-height: 1.1em;
@@ -156,15 +144,33 @@ img {
     color: #000;
 }
 
+pre {
+  border: 1px solid #888;
+  overflow: auto;
+  font-size: 13px;
+  line-height: 1.42857143;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+code {
+  font-size: 14px;
+  font-family: 'Roboto Mono', monospace;
+  padding: 3px;
+  border-radius: 4px;
+  background-color: #ededed;
+}
+
 @media (max-width: 480px) {
     .page {
-        max-width: 300px;
-        width: 300px;
+        max-width: 350px;
+        width: 350px;
         line-height: 27px;
     }
 
     .page h1,h2,h3 {
-        line-height: 45px;
+        line-height: 35px;
     }
 
     .optional {
@@ -172,33 +178,11 @@ img {
     }
 
     img {
-        max-width: 300px;
+        max-width: 340px;
         margin-left: auto;
         margin-right: auto;
         border-radius: 5px;
         display: block;
         text-align: center;
-    }
-
-    a:active {
-        text-decoration: underline;
-        text-decoration-style: dotted;
-        text-decoration-color: rgb(137, 137, 137);
-        text-decoration-thickness: 2px;
-        text-underline-offset: 2px;
-        color:inherit; 
-        
-    }
-    
-    a:hover {
-        text-decoration: underline;
-        text-decoration-style: dotted;
-        text-decoration-color: rgb(87, 87, 87);
-        color:inherit; 
-    }
-    
-
-    .social-icon {
-        font-size:28px;
     }
 }
