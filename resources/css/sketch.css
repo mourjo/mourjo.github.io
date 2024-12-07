@@ -11,6 +11,19 @@ body {
     hyphens: auto;
 }
 
+strong {
+    font-family: "Spectral", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+b {
+    font-family: "Spectral", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 .social-icon {
     padding: 2px;
     padding-top: 5px;
