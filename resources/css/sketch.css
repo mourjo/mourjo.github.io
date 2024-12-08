@@ -20,10 +20,6 @@ b {
     font-style: normal;
 }
 
-.social-icon {
-    font-size: 30px;
-}
-
 .center {
     display: block;
     margin-left: auto;
@@ -61,6 +57,7 @@ a:hover {
     text-decoration-color: rgb(134, 134, 134);
     color:inherit; 
 }
+
 
 blockquote {
     border-left: 1px solid #aaa;
@@ -102,12 +99,14 @@ img {
 
 .header {
     clear: both;
-    padding-bottom: 5px;
-    margin-top: 1em;
     border-bottom: 1px solid black;
     text-align: right;
+    font-size: 1.25em;
+    font-family: 'Lora', serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
     padding-bottom: 0.5em;
-    font-family: 'Spectral', serif;
 }
 
 .brand {
@@ -117,7 +116,6 @@ img {
 
 .header a {
     text-decoration: none;
-    font-family: 'Lora', serif;
     font-weight: bold;
 }
 
@@ -130,7 +128,6 @@ img {
 .copy {
     color: rgb(170, 170, 170);
     font-style: italic;
-    font-size: smaller;
 }
 
 .post {
@@ -150,7 +147,7 @@ pre {
   overflow: auto;
   font-size: 13px;
   line-height: 1.42857143;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -163,11 +160,24 @@ code {
   background-color: #ededed;
 }
 
+.article-list-item {
+    margin-top: 5px;
+}
+
+.social-icon {
+    font-size: 30px;
+}
+
+
 @media (max-width: 480px) {
     .page {
         max-width: 350px;
         width: 350px;
         line-height: 27px;
+    }
+
+    .article-list-item {
+        margin-top: 10px;
     }
 
     .page h1,h2,h3 {
