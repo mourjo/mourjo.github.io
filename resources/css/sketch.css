@@ -32,9 +32,9 @@ b {
     font-weight: normal;
 }
 
-h1{font-family: 'Lora', serif;margin-top:5px;margin-bottom:10px;}
-h2{font-family: 'Lora', serif;margin-top:5px;margin-bottom:10px;}
-h3{font-family: 'Lora', serif;margin-top:5px;margin-bottom:10px;}
+h1{font-family: 'Lora', serif;}
+h2{font-family: 'Lora', serif;}
+h3{font-family: 'Lora', serif;}
 h4{font-family: 'Lora', serif;}
 h5{font-family: 'Lora', serif;}
 h6{font-family: 'Lora', serif;}
@@ -145,7 +145,7 @@ img {
 
 pre {
   border: 1px solid #888;
-  overflow: auto;
+  overflow: hidden;
   font-size: 13px;
   line-height: 1.42857143;
   font-family: "Roboto Mono", monospace;
@@ -159,6 +159,11 @@ code {
   padding: 3px;
   border-radius: 4px;
   background-color: #ededed;
+  overflow-x: auto;
+}
+
+.language-mermaid {
+  background-color: white;
 }
 
 .article-list-item {
@@ -169,6 +174,136 @@ code {
     font-size: 30px;
 }
 
+.katex {
+    font-size: large;
+}
+
+.callout {
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+
+    border-radius: 4px;
+    margin: 10px;
+    background-color: #dedede;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: #8a8a8a
+}
+
+.callout-tip, .callout-info {
+    background-color: rgba(0, 191, 188, 0.1);
+    border-left-color: rgb(0, 191, 188);
+}
+
+.callout-tip > .callout-title {
+    color: rgb(0, 191, 188);
+}
+
+.callout-info > .callout-title {
+    color: rgb(0, 191, 188);
+}
+
+.callout-note, .callout-important {
+    background-color: rgba(8, 109, 221, 0.1);
+    border-left-color: rgb(8, 109, 221);
+}
+
+.callout-note > .callout-title {
+    color: rgb(8, 109, 221);
+}
+
+.callout-important > .callout-title {
+    color: rgb(8, 109, 221);
+}
+
+.callout-question {
+    background-color: rgba(236, 117, 0, 0.1);
+    border-left-color: rgb(236, 117, 0);
+}
+
+.callout-question > .callout-title {
+    color: rgb(236, 117, 0);
+}
+
+.callout-example {
+    background-color: rgba(120, 82, 238, 0.1);
+    border-left-color: rgb(120, 82, 238);
+}
+
+.callout-example > .callout-title {
+    color: rgb(120, 82, 238);
+}
+
+
+.callout-title {
+    font-weight: bold;
+    font-family: 'Lora', serif;
+    padding-bottom: 4px;
+}
+
+.search-bar {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: inherit;
+    
+    font-family: inherit;
+    line-height: inherit;
+}
+
+.searchbar-container {
+    padding-top: 0.5em;
+    text-align: right;
+    padding-bottom: 0.5em;
+}
+
+
+.search-container {
+    position: relative;
+    background-color: white;
+}
+
+
+.search-results-container {
+    white-space: nowrap;    
+    text-align: left;
+    display: none;
+    width: 100%;
+    padding: 10px;
+    overflow-y: auto;
+    max-height: 70vh;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: -11px 5px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 1); /* Semi-transparent black */
+}
+
+.search-result {
+  padding: 3px;
+  margin: 3px;
+}
+
+table {
+  border-collapse: collapse; /* Optional: Removes double borders */
+  width: 100%; /* Optional: Adjust width */
+}
+th, td {
+  border: 1px solid  rgb(75, 75, 75); /* Add a border to cells */
+  padding: 8px; /* Optional: Adds padding to cells */
+  text-align: left; /* Optional: Aligns text */
+}
 
 @media (max-width: 480px) {
     .page {
