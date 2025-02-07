@@ -1,24 +1,14 @@
 body {
     color: rgb(75, 75, 75);
-    background-color:white;
-    font-family: 'Spectral', serif;
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-    
+    background-color:white;    
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    line-height: 1.6;
 }
 
-strong {
-    font-family: "Spectral", serif;
-    font-weight: 600;
-    font-style: normal;
-}
-
-b {
-    font-family: "Spectral", serif;
-    font-weight: 600;
-    font-style: normal;
-}
 
 .center {
     display: block;
@@ -54,7 +44,7 @@ a:hover {
     text-decoration: underline;
     text-decoration-style: dashed;
     text-underline-offset: 3px;
-    text-decoration-color: rgb(134, 134, 134);
+    text-decoration-color: rgb(202 202 202);
     color:inherit; 
 }
 
@@ -62,7 +52,9 @@ a:hover {
 blockquote {
     border-left: 1px solid #aaa;
     padding-left: 0.7em;
+    padding-right: 0.7em;
     font-style: italic;
+    color: rgb(144 144 144);
 }
 
 img {
@@ -309,15 +301,10 @@ th, td {
     .page {
         max-width: 350px;
         width: 350px;
-        line-height: 27px;
     }
 
     .article-list-item {
         margin-top: 10px;
-    }
-
-    .page h1,h2,h3 {
-        line-height: 35px;
     }
 
     .optional {
