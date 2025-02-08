@@ -22,12 +22,12 @@ body {
     font-weight: normal;
 }
 
-h1{font-family: 'Lora', serif;}
-h2{font-family: 'Lora', serif;}
-h3{font-family: 'Lora', serif;}
-h4{font-family: 'Lora', serif;}
-h5{font-family: 'Lora', serif;}
-h6{font-family: 'Lora', serif;}
+h1{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h2{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h3{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h4{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h5{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h6{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
 
 a:visited,
 a:link,
@@ -86,7 +86,7 @@ img {
     margin-bottom: 1em;
     border-top: 1px solid black;
     text-align: center;
-    font-family: 'Lora', serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 1.25em;
 }
 
@@ -95,7 +95,7 @@ img {
     border-bottom: 1px solid black;
     text-align: right;
     font-size: 1.25em;
-    font-family: 'Lora', serif;
+    font-family: 'Libre Baskerville', serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
@@ -104,7 +104,7 @@ img {
 
 .brand {
     float:left;
-    font-family: 'Lora', serif;
+    font-family: 'Libre Baskerville', serif;
 }
 
 .header a {
@@ -114,7 +114,7 @@ img {
 
 .footer a {
     text-decoration: none;
-    font-family: 'Lora', serif;
+    font-family: 'Libre Baskerville', serif;
     font-weight: bold;
 }
 
@@ -320,3 +320,6 @@ th, td {
         text-align: center;
     }
 }
+
+
+
