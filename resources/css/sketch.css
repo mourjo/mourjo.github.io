@@ -22,7 +22,7 @@ body {
     font-weight: normal;
 }
 
-h1{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h1{margin-bottom: 8px; margin-top: 20px; font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
 h2{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
 h3{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
 h4{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
@@ -320,6 +320,3 @@ th, td {
         text-align: center;
     }
 }
-
-
-
