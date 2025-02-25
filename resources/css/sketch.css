@@ -22,12 +22,14 @@ body {
     font-weight: normal;
 }
 
-h1{margin-bottom: 8px; margin-top: 20px; font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
-h2{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
-h3{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
-h4{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
-h5{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
-h6{font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h1             {font-size: 22px; font-family: 'Libre Baskerville', serif; font-weight: 700; margin-bottom: 8px; margin-top: 20px;}
+h2             {font-size: 20px; font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h3             {font-size: 18px; font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; font-weight: 700;}
+h4             {font-size: 16px; font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; }
+h5             {font-size: 15px; font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; }
+h6             {font-size: 15px; font-family: 'Libre Baskerville', serif; font-style: normal; font-variant: normal; }
+.post-headline {font-size: 25px; font-family: 'Libre Baskerville', serif; font-weight: 700; font-variant: small-caps; margin-bottom: 8px; margin-top: 20px; }
+
 
 a:visited,
 a:link,
@@ -35,7 +37,7 @@ a:active {
     text-decoration: underline;
     text-decoration-style: dashed;
     text-underline-offset: 3px;
-    text-decoration-color: rgb(219, 219, 219);
+    text-decoration-color: rgb(198, 198, 198);
     color:inherit; 
     
 }
