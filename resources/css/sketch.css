@@ -299,6 +299,62 @@ th, td {
   text-align: left; /* Optional: Aligns text */
 }
 
+
+.pill-container {
+  display: flex; /* Use flexbox for easy horizontal alignment */
+  align-items: center; /* Vertically center the pills */
+  flex-wrap: wrap; /* Allow pills to wrap to the next line if they overflow */
+  gap: 5px; /* spacing between the pills */
+}
+
+/* Individual pill styling */
+.pill {
+  display: inline-block; /* Important: Allows them to be inline and have width/height */
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark text color */
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 20px; /* Creates the rounded pill shape */
+  font-size: 14px; /* Adjust as needed */
+  margin-left: 5px; /* Spacing around the pill (optional) */
+  white-space: nowrap; /* Prevent text from wrapping within the pill */
+  
+  text-overflow: ellipsis; /* Add ellipsis (...) if content is too long */
+  max-width: 150px; /* Optional: Limit the width of the pill */
+  border: 1px solid #ccc; /* Optional: Add a subtle border */
+}
+
+/* Pill with a link */
+.pill a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color from the pill */
+}
+
+/* Hover effect */
+.pill:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+  cursor: pointer; /* Change cursor to a pointer */
+}
+
+/* Pills with different colors */
+.pill.primary {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pill.success {
+  background-color: #28a745;
+  color: white;
+  border-color: #28a745;
+}
+
+.pill.danger {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
 @media (max-width: 480px) {
     .page {
         max-width: 350px;
