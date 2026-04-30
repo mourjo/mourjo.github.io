@@ -145,6 +145,14 @@ img {
     font-style: italic;
 }
 
+.no-margin-below {
+    margin-bottom: 0px;
+}
+
+.no-margin-above {
+    margin-top: 0px;
+}
+
 .post {
     padding-top: 10px;
 }
