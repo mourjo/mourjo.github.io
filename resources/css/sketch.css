@@ -114,10 +114,16 @@ img {
     font-weight: bold;
 }
 
-.footer a {
-    text-decoration: none;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: bold;
+.header a.active {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 5px;
+}
+
+.footer a.active {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-underline-offset: 5px;
 }
 
 .copy {
