@@ -28,7 +28,7 @@ h3             {font-size: 18px; font-family: 'Roboto', sans-serif; font-style: 
 h4             {font-size: 16px; font-family: 'Roboto', sans-serif; font-style: normal; font-variant: normal; }
 h5             {font-size: 15px; font-family: 'Roboto', sans-serif; font-style: normal; font-variant: normal; }
 h6             {font-size: 15px; font-family: 'Roboto', sans-serif; font-style: normal; font-variant: normal; }
-.post-headline {font-size: 25px; font-family: 'Roboto', sans-serif; font-weight: 700; font-variant: small-caps; margin-bottom: 8px; margin-top: 20px; }
+.post-headline {font-size: 25px; font-family: 'Roboto', sans-serif; font-weight: 700; margin-bottom: 8px; margin-top: 20px; }
 
 
 a:visited,
