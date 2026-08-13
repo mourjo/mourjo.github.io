@@ -72,8 +72,23 @@
           <p class="copy no-margin-above">July 2026 - <a href="https://www.wearedevelopers.com/world-congress/agenda/sessions/solving-architectural-entropy-with-runnable-diagrams-1123547">WeAreDevelopers World Congress</a>, Berlin</p>
           <p>"Software architecture does not age gracefully. Software architecture degrades in direct proportion to the number of changes made to the software." - <a href="https://aosabook.org/en/v1/bdb.html">Architecture of Open Source Applications, Berkley DB.</a></p>
           <p>In this talk, I explore the concept of architectural entropy and how runnable diagrams can combat design erosion. Human centricity should be the core aspect of our systems and in that respect, visual thinking is a powerful construct. As the era of code generation dawns on us, systems thinking and human centricity are going to determine which systems survive and which disintegrate into chaos. </p>
-          <p>Video coming soon. Here are the slides:</p>
-          <iframe width="100%" height="448" src="/slides/2026-07-09-wearedevelopers-berlin.pdf" title="Slides - Solving Architectural Entropy With Runnable Diagrams" frameborder="0"></iframe>
+          <video id="wearedevelopers-video" width="100%" height="448" controls playsinline style="background:#000;">
+            Your browser does not support HTML5 video.
+          </video>
+          <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+          <script>
+            (function() {
+              var video = document.getElementById('wearedevelopers-video');
+              var src = 'https://customer-goifxnzhrq3d0d54.cloudflarestream.com/e3e8fd0016447a48d329f633bf9d3d70/manifest/video.m3u8';
+              if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = src;
+              } else if (Hls.isSupported()) {
+                var hls = new Hls();
+                hls.loadSource(src);
+                hls.attachMedia(video);
+              }
+            })();
+          </script>
         </div>
 
         <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 40px;">
