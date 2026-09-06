@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+# pre-commit hook: regenerates slides.html with the current contents
+# of the slides/ directory before every commit.
+#
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+SLIDES_DIR="$REPO_ROOT/slides"
+SLIDES_HTML="$REPO_ROOT/slides.html"
+
+# Only run if slides.html exists
+if [ ! -f "$SLIDES_HTML" ]; then
+    exit 0
+fi
+
+# Build the bullet list from files in slides/
+LIST_ITEMS=""
+if [ -d "$SLIDES_DIR" ]; then
+    for f in $(ls -1 "$SLIDES_DIR" | sort); do
+        LIST_ITEMS="$LIST_ITEMS          <li><a href=\"slides/$f\">$f</a></li>\n"
+    done
+fi
+
+# Replace everything between the marker comments
+# Using a temp file for portability (BSD sed on macOS)
+TMPFILE=$(mktemp)
+awk -v items="$LIST_ITEMS" '
+    /<!-- AUTO-GENERATED-SLIDES-LIST:START -->/ {
+        print
+        print "        <ul>"
+        # Use printf to interpret \n in items
+        cmd = "printf \047" items "\047"
+        while ((cmd | getline line) > 0) {
+            print line
+        }
+        close(cmd)
+        print "        </ul>"
+        skip = 1
+        next
+    }
+    /<!-- AUTO-GENERATED-SLIDES-LIST:END -->/ {
+        skip = 0
+        print
+        next
+    }
+    !skip { print }
+' "$SLIDES_HTML" > "$TMPFILE"
+
+mv "$TMPFILE" "$SLIDES_HTML"
+
+# Stage the updated file so it's included in the commit
+git add "$SLIDES_HTML"
